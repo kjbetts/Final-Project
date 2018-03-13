@@ -8,7 +8,6 @@
       returnWeatherData: returnWeatherData,
       imageChanger: imageChanger,
 
-
     }
 
     function apiRequest(userLocation) {
@@ -18,7 +17,7 @@
       }).then(function(response) {
         apiData.temperature = response.data.current_observation.feelslike_string;
         apiData.condition = response.data.current_observation.weather;
-        apiData.time = response.data.observation_time; 
+        apiData.time = response.data.current_observation.local_time_rfc822;
         return apiData
       })
     }
@@ -42,7 +41,6 @@
       }
 
     }
-
 
   }
 

@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Mina');
+@import url('https://fonts.googleapis.com/css?family=Russo+One');
 
 body{
-  font-family: 'Mina', sans-serif;
+  font-family: 'Russo One', sans-serif;
   background: #00ffff;
 }
 
@@ -25,14 +25,17 @@ h1 {
   margin: 0 auto;
   width: 70%;
   height: 25px;
+  border: none;
   border-radius: 20px;
 }
 
 button{
   display: block;
+  font-family: 'Russo One', sans-serif;
   margin: 0 auto;
   width: 70%;
   height: 25px;
+  border: none;
   border-radius: 20px;
   background-color: #99CCFF;
   color: black;
@@ -103,9 +106,11 @@ button:hover{
 
   button{
     display: block;
+    font-family: 'Russo One', sans-serif;
     margin: 0 auto;
     width: 80%;
     height: 25px;
+    border: none;
     border-radius: 20px;
     background-color: #99CCFF;
     color: black;
@@ -135,6 +140,6 @@ button:hover{
     padding-right: 5px;
     background: #3399ff;
     border-radius: 3%;
-    padding-bottom: 20px;
+    padding-bottom: 80px;
   }
 }
