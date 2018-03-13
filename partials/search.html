@@ -1,0 +1,10 @@
+<form ng-submit="">
+  <div class="search">
+    <h1>Welcome to Weather Matcher</h1>
+    <input ng-model="$ctrl.userLocation.city" placeholder="Enter CITY Here" />
+    <br>
+    <input ng-model="$ctrl.userLocation.state" placeholder="Enter STATE Here" />
+    <br>
+    <button ng-click="$ctrl.apiRequest(userLocation);">Check Weather</button>
+</form>
+</div>
