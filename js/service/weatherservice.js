@@ -13,7 +13,7 @@
     function apiRequest(userLocation) {
       return $http({
         method: "GET",
-        url: "http://api.wunderground.com/api/49fd7dffa669767a/conditions/q/" + userLocation.state + "/" + userLocation.city + ".json"
+        url: "https://api.wunderground.com/api/49fd7dffa669767a/conditions/q/" + userLocation.state + "/" + userLocation.city + ".json"
       }).then(function(response) {
         apiData.temperature = response.data.current_observation.feelslike_string;
         apiData.condition = response.data.current_observation.weather;

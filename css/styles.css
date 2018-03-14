@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Russo+One');
-
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
 body{
   font-family: 'Russo One', sans-serif;
   background: #00ffff;
+  font-size: 9px;
 }
 
 h1 {
@@ -11,13 +12,19 @@ h1 {
 }
 
 a{
-  font-size: 26px;
+  font-size: 16px;
   color: white;
   text-decoration: none;
 }
 
 a:hover{
   color: black;
+}
+
+.time {
+ font-family: 'Orbitron', sans-serif;
+ font-size: 16px;
+ padding: 1px;
 }
 .search{
   display: block;
@@ -37,6 +44,7 @@ a:hover{
   height: 25px;
   border: none;
   border-radius: 20px;
+  text-align: center;
   }
 
 button{
@@ -70,11 +78,29 @@ button:hover{
 
 .results ul{
  list-style-type: none;
+ padding: 0;
 }
 
 .results li{
   color: white;
   font-size: 20px;
+  text-align: center;
+}
+.time{
+  background-color: black;
+  border-radius: 5px;
+}
+
+.citydatelocaltime{
+  background-color: rgb(20, 0, 247);
+  border-radius: 5px;
+  padding: 15px;
+  text-align: center;
+}
+.weather{
+  background-color: rgb(31, 100, 115);
+  border-radius: 5px;
+  padding: 15px;
   text-align: center;
 }
 
@@ -116,6 +142,10 @@ button:hover{
     text-align: center;
   }
 
+  .time{
+    background-color: none;
+    border-radius: 5px;
+  }
 
   button{
     display: block;
@@ -131,6 +161,15 @@ button:hover{
 }
 
 @media screen and (min-width:1024px){
+  body{
+    font-size: 14px;
+  }
+
+ a{
+   display: flex;
+   font-size: 30px;
+   text-align: right;
+  }
 
   .search{
     display: block;
@@ -143,17 +182,54 @@ button:hover{
     padding-top: 20px;
     padding-bottom: 30px;
   }
+
   .results{
     display: block;
     align-items: center;
     margin: 0 auto;
     opacity: 0.8;
-    width: 50%;
+    width: 80%;
     height: 300px;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
     background: #3399ff;
     border-radius: 3%;
-    padding-bottom: 140px;
+    padding-bottom: 150px;
   }
+
+  .time{
+    margin: 0 auto;
+    width: 30%;
+  }
+
+  .citydatelocaltime{
+    float: right;
+    width: 37%;
+    background-color: transparent;
+  }
+  .weather{
+    float: left;
+    width: 37%;
+    background-color: transparent;
+  }
+
+  .citydatelocaltime li{
+    text-align: center;
+  }
+
+ .weather li{
+   text-align: center;
+
+  }
+
+ .citydatelocaltime h1{
+   text-align: center;
+ }
+
+
+ .weather h1{
+   text-align: center;
+ }
+
+
 }
