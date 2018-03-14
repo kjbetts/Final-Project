@@ -18,6 +18,7 @@
         apiData.temperature = response.data.current_observation.feelslike_string;
         apiData.condition = response.data.current_observation.weather;
         apiData.time = response.data.current_observation.local_time_rfc822;
+        apiData.city = response.data.current_observation.display_location.full
         return apiData
       })
     }
