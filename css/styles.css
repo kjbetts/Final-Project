@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Orbitron');
 body{
   font-family: 'Russo One', sans-serif;
-  background: #00ffff;
+  background: rgb(0, 71, 193);
   font-size: 9px;
 }
 
@@ -26,11 +26,15 @@ a:hover{
  font-size: 16px;
  padding: 1px;
 }
+
 .search{
   display: block;
   align-items: center;
   margin: 0 auto;
-  width: 60%;
+  font-size: 13px;
+  margin-top: 100px;
+  width: 80%;
+  height: 300px;
   background: #3399ff;
   border-radius: 3%;
   padding-top: 7px;
@@ -39,20 +43,26 @@ a:hover{
 
 .search input{
   display: block;
+  font-family: 'Russo One', sans-serif;
+  font-size: 20px;
   margin: 0 auto;
+  margin-top: 25px;
   width: 70%;
   height: 25px;
   border: none;
   border-radius: 20px;
   text-align: center;
-  }
+  padding: 2%;
+}
 
 button{
   display: block;
   font-family: 'Russo One', sans-serif;
+  font-size: 20px;
   margin: 0 auto;
+  margin-top: 33px;
   width: 70%;
-  height: 25px;
+  height: 33px;
   border: none;
   border-radius: 20px;
   background-color: #99CCFF;
@@ -89,22 +99,50 @@ button:hover{
 .time{
   background-color: black;
   border-radius: 5px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  width: 59%;
+}
+
+.timedisplay{
+  display: block;
+  background-color: rgb(52, 64, 107);
+  margin: 0 auto;
+  width: 40%;
+  border-radius: 5px;
 }
 
 .citydatelocaltime{
-  background-color: rgb(20, 0, 247);
+  background-color: black;
+  margin: 0 auto;
+  margin-bottom: 15px;
   border-radius: 5px;
   padding: 15px;
   text-align: center;
+  width: 80%;
 }
 .weather{
-  background-color: rgb(31, 100, 115);
+  background-color: black;
+  margin: 0 auto;
   border-radius: 5px;
   padding: 15px;
   text-align: center;
+  width: 80%;
 }
 
+.citydatelocaltime h1{
+  background-color: grey;
+  border-radius: 5px;
+}
+
+.weather h1{
+  background-color: grey;
+  border-radius: 5px;
+}
+
+
 @media screen and (min-width: 834px){
+
 
   .search{
     display: block;
@@ -115,11 +153,13 @@ button:hover{
     border-radius: 3%;
     padding-top: 22px;
     padding-bottom: 40px;
+    margin-top: 100px;
   }
 
   .search input{
     display: block;
     margin: 0 auto;
+    margin-top: 25px;
     width: 80%;
     height: 25px;
     border-radius: 20px;
@@ -147,22 +187,13 @@ button:hover{
     border-radius: 5px;
   }
 
-  button{
-    display: block;
-    font-family: 'Russo One', sans-serif;
-    margin: 0 auto;
-    width: 80%;
-    height: 25px;
-    border: none;
-    border-radius: 20px;
-    background-color: #99CCFF;
-    color: black;
-  }
+
 }
 
 @media screen and (min-width:1024px){
+
   body{
-    font-size: 14px;
+    font-size: 16px;
   }
 
  a{
@@ -171,16 +202,18 @@ button:hover{
    text-align: right;
   }
 
-  .search{
-    display: block;
-    align-items: center;
-    margin: 0 auto;
-    width: 500px;
-    height: 225px;
-    background: #3399ff;
-    border-radius: 3%;
-    padding-top: 20px;
-    padding-bottom: 30px;
+  button{
+    width: 80%;
+    height: 50px;
+    margin-top: 17px;
+  }
+
+  .search h1{
+    font-size: 30px;
+  }
+
+  .search input{
+    margin-top: 25px;
   }
 
   .results{
@@ -202,15 +235,21 @@ button:hover{
     width: 30%;
   }
 
+  .timedisplay{
+    background-color: transparent;
+  }
+
   .citydatelocaltime{
     float: right;
     width: 37%;
-    background-color: transparent;
+    background-color: black;
+    margin-top: 10px;
   }
   .weather{
     float: left;
     width: 37%;
-    background-color: transparent;
+    background-color: black;
+    margin-top: 10px;
   }
 
   .citydatelocaltime li{
